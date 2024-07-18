@@ -112,7 +112,7 @@ function TermsAndConditions() {
         <p>
           <strong>10.1</strong> If you experience a problem with the App, please
           contact us at{" "}
-          <Link to="mailto:help@famlicious.com">help@famlicious.com</Link>. We
+          <a href="mailto:help@famlicious.com">help@famlicious.com</a>. We
           reserve the right to resolve any problem for 45 days from when we
           respond to any inquiry. Any dispute arising out of or relating to
           these Terms will be resolved by binding arbitration in accordance with
@@ -137,7 +137,7 @@ function TermsAndConditions() {
         <p>
           <strong>13.1</strong> If you have any questions about these Terms,
           please contact us at
-          <Link to="mailto:help@famlicious.com"> help@famlicious.com</Link>.
+          <a href="mailto:help@famlicious.com"> help@famlicious.com</a>.
         </p>
 
         <p>

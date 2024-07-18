@@ -122,7 +122,7 @@ function PrivacyPolicy() {
           <li>
             <strong>Delete Your Account:</strong> You can delete your account at
             any time in the app or by contacting us at
-            <Link to="mailto:help@famlicious.com"> help@famlicious.com</Link>.
+            <a href="mailto:help@famlicious.com"> help@famlicious.com</a>.
           </li>
         </ul>
 
@@ -143,7 +143,7 @@ function PrivacyPolicy() {
         <h2>Contact Us</h2>
         <p>
           If you have any questions about this Privacy Policy, please contact us
-          at <Link to="mailto:help@famlicious.com">help@famlicious.com</Link>.
+          at <a href="mailto:help@famlicious.com">help@famlicious.com</a>.
         </p>
       </div>
       <Footer />
