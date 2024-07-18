@@ -2,8 +2,12 @@ import { Link } from "react-router-dom";
 import "./PrivacyPolicy.css";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
+import { useEffect } from "react";
 
 function PrivacyPolicy() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />
@@ -122,7 +126,7 @@ function PrivacyPolicy() {
           <li>
             <strong>Delete Your Account:</strong> You can delete your account at
             any time in the app or by contacting us at
-            <a href="mailto:help@famlicious.com"> help@famlicious.com</a>.
+            <Link to="mailto:help@famlicious.com"> help@famlicious.com</Link>.
           </li>
         </ul>
 
@@ -143,7 +147,7 @@ function PrivacyPolicy() {
         <h2>Contact Us</h2>
         <p>
           If you have any questions about this Privacy Policy, please contact us
-          at <a href="mailto:help@famlicious.com">help@famlicious.com</a>.
+          at <Link to="mailto:help@famlicious.com">help@famlicious.com</Link>.
         </p>
       </div>
       <Footer />

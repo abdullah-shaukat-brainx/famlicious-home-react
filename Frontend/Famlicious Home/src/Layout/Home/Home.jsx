@@ -27,9 +27,9 @@ function Home() {
             </p>
             <p>Be You. Be More. Be Together.</p>
             <div className="app-links">
-              <a href="#">
+              <Link to="#">
                 <img src={AppStore} alt="App Store" />
-              </a>
+              </Link>
             </div>
           </div>
         </section>

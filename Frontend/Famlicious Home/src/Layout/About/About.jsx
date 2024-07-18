@@ -1,8 +1,14 @@
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import "./About.css";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <>
       <Header />
@@ -35,7 +41,7 @@ function About() {
           <p>
             If you have any questions, feedback, or suggestions, we would love
             to hear from you. Feel free to reach out to us at
-            <a href="mailto:help@famlicious.com"> help@famlicious.com</a>.
+            <Link to="mailto:help@famlicious.com"> help@famlicious.com</Link>.
           </p>
           <p>Thank you for being a part of the Famlicious community!</p>
         </div>
