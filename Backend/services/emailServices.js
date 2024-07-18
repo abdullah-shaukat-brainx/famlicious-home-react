@@ -8,10 +8,6 @@ function sendEmail(recieverEmail, subject, text) {
     from: process.env.SENDER_EMAIL,
     subject: subject,
     text: text,
-    // html: `<p>${text.replace(
-    //   /\n/g,
-    //   "<br>"
-    // )}</p><br><a clicktracking=off href="${link}">Click here!!!</a>`,
   };
 
   sgMail
