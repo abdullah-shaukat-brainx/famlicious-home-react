@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import MainLogo from "../../../assets/images/main-logo.png";
 import FacebookLogo from "../../../assets/images/fb.png";
 import TwitterLogo from "../../../assets/images/tw.png";
@@ -31,14 +30,14 @@ function Footer() {
             </div>
             <div className="contact-info">
               <p>
-                <i className="fa fa-phone phone-icon"></i>123-456-789
+                <i className="fa fa-phone phone-icon"></i>415-713-2578
               </p>
               <div className="contact-separator-empty-div"></div>
               <p className="envolope-text">
-                <Link className="email-link" to="mailto:help@famlicious.com">
+                <a className="email-link" href="mailto:help@famlicious.com">
                   <i className="fa fa-envelope envelope-icon"></i>
                   help@famlicious.com
-                </Link>
+                </a>
               </p>
             </div>
           </div>
@@ -48,16 +47,16 @@ function Footer() {
               <p className="section-title">Quick</p>
               <br />
               <p>
-                <Link to="/about-us">About Us</Link>
+                <a href="/about-us">About Us</a>
               </p>
               <p>
-                <Link to="/privacy-policy">Privacy Policy</Link>
+                <a href="/privacy-policy">Privacy Policy</a>
               </p>
               <p>
-                <Link to="/terms-and-conditions">Terms and Conditions</Link>
+                <a href="/terms-and-conditions">Terms and Conditions</a>
               </p>
               <p>
-                <Link to="/contact-us">Contact Us</Link>
+                <a href="/contact-us">Contact Us</a>
               </p>
             </div>
           </div>
@@ -66,7 +65,7 @@ function Footer() {
               <p className="section-title">Links</p>
               <br />
               <p>
-                <Link to="#">App Store</Link>
+                <a href="#">App Store</a>
               </p>
             </div>
           </div>

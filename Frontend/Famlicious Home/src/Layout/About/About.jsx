@@ -1,7 +1,6 @@
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import "./About.css";
-import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -36,7 +35,7 @@ function About() {
           <p>
             If you have any questions, feedback, or suggestions, we would love
             to hear from you. Feel free to reach out to us at
-            <Link to="mailto:help@famlicious.com"> help@famlicious.com</Link>.
+            <a href="mailto:help@famlicious.com"> help@famlicious.com</a>.
           </p>
           <p>Thank you for being a part of the Famlicious community!</p>
         </div>

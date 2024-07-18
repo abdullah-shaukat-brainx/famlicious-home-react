@@ -5,9 +5,9 @@ import "./Header.css";
 function Header() {
   return (
     <header className="header">
-      <Link to="/">
+      <a href="/">
         <img className="header-logo-image" src={logo} alt="Famlicious Logo" />
-      </Link>
+      </a>
       <div>
         <link
           rel="stylesheet"

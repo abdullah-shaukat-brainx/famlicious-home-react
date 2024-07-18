@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("../../../assets/fonts/GILROY-REGULAR.TTF") format("woff2");
+  src: url("../../assets/fonts/GILROY-REGULAR.TTF") format("woff2");
 }
 
 * {
@@ -12,7 +12,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  /* border-bottom: 1px solid #e0e0e0; */
 }
 
 header img {
@@ -102,7 +101,7 @@ footer .footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1265px;
   margin: 0 auto;
 }
 
@@ -118,10 +117,8 @@ footer .footer-section img.logo {
 }
 
 footer .footer-section img.screenshot {
-  width: 100%;
-  height: auto;
-  margin: 10px 0;
-  height: calc(100% - 60px);
+  max-width: 110%;
+  margin: 50px 0;
 }
 
 footer .social-icons {
@@ -324,7 +321,6 @@ footer .footer-section.contact-info p {
 
 .email-link:hover {
   cursor: inherit;
-  /* color: purple; */
 }
 
 .footer-bottom span {
@@ -344,7 +340,6 @@ footer .footer-section.contact-info p {
   }
   footer .footer-links {
     padding-top: 80px;
-    /* padding-left: 10px; */
   }
 }
 @media (max-width: 1280px) {
@@ -352,7 +347,6 @@ footer .footer-section.contact-info p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: aqua; */
   }
 }
 
@@ -368,7 +362,6 @@ footer .footer-section.contact-info p {
   .footer-quick-link {
     text-align: left;
     margin-left: 100px;
-    /* background-color: aqua; */
   }
 
   .contact-separator-empty-div {
