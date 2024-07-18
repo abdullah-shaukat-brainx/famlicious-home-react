@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import MainLogo from "../../../assets/images/main-logo.png";
 import FacebookLogo from "../../../assets/images/fb.png";
 import TwitterLogo from "../../../assets/images/tw.png";
@@ -35,10 +34,10 @@ function Footer() {
               </p>
               <div className="contact-separator-empty-div"></div>
               <p className="envolope-text">
-                <Link className="email-link" to="mailto:help@famlicious.com">
+                <a className="email-link" href="mailto:help@famlicious.com">
                   <i className="fa fa-envelope envelope-icon"></i>
                   help@famlicious.com
-                </Link>
+                </a>
               </p>
             </div>
           </div>

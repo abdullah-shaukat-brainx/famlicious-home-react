@@ -1,7 +1,6 @@
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import "./About.css";
-import { Link } from "react-router-dom";
 
 function About() {
   return (
