@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import { contactUs } from "../../services/homeServices";
@@ -6,6 +6,10 @@ import { isValidEmailFormat } from "../../services/utilServices";
 import "./Contact.css";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",

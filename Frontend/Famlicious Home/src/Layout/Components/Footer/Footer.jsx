@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import MainLogo from "../../../assets/images/main-logo.png";
 import FacebookLogo from "../../../assets/images/fb.png";
 import TwitterLogo from "../../../assets/images/tw.png";
@@ -18,15 +19,15 @@ function Footer() {
             </p>
 
             <div className="social-icons">
-              <a href="#">
+              <Link to="#">
                 <img src={FacebookLogo} alt="Facebook" />
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="#">
                 <img src={TwitterLogo} alt="Twitter" />
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="#">
                 <img src={TelegramLogo} alt="Telegram" />
-              </a>
+              </Link>
             </div>
             <div className="contact-info">
               <p>
@@ -34,10 +35,10 @@ function Footer() {
               </p>
               <div className="contact-separator-empty-div"></div>
               <p className="envolope-text">
-                <a className="email-link" href="mailto:help@famlicious.com">
+                <Link className="email-link" to="mailto:help@famlicious.com">
                   <i className="fa fa-envelope envelope-icon"></i>
                   help@famlicious.com
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -47,16 +48,16 @@ function Footer() {
               <p className="section-title">Quick</p>
               <br />
               <p>
-                <a href="/about-us">About Us</a>
+                <Link to="/about-us">About Us</Link>
               </p>
               <p>
-                <a href="/privacy-policy">Privacy Policy</a>
+                <Link to="/privacy-policy">Privacy Policy</Link>
               </p>
               <p>
-                <a href="/terms-and-conditions">Terms and Conditions</a>
+                <Link to="/terms-and-conditions">Terms and Conditions</Link>
               </p>
               <p>
-                <a href="/contact-us">Contact Us</a>
+                <Link to="/contact-us">Contact Us</Link>
               </p>
             </div>
           </div>
@@ -65,7 +66,7 @@ function Footer() {
               <p className="section-title">Links</p>
               <br />
               <p>
-                <a href="#">App Store</a>
+                <Link to="#">App Store</Link>
               </p>
             </div>
           </div>

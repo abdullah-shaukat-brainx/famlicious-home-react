@@ -2,8 +2,12 @@ import "./TermsAndConditions.css";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function TermsAndConditions() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />
@@ -112,7 +116,7 @@ function TermsAndConditions() {
         <p>
           <strong>10.1</strong> If you experience a problem with the App, please
           contact us at{" "}
-          <a href="mailto:help@famlicious.com">help@famlicious.com</a>. We
+          <Link to="mailto:help@famlicious.com">help@famlicious.com</Link>. We
           reserve the right to resolve any problem for 45 days from when we
           respond to any inquiry. Any dispute arising out of or relating to
           these Terms will be resolved by binding arbitration in accordance with
@@ -137,7 +141,7 @@ function TermsAndConditions() {
         <p>
           <strong>13.1</strong> If you have any questions about these Terms,
           please contact us at
-          <a href="mailto:help@famlicious.com"> help@famlicious.com</a>.
+          <Link to="mailto:help@famlicious.com"> help@famlicious.com</Link>.
         </p>
 
         <p>
