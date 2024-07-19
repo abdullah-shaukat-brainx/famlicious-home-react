@@ -4,11 +4,14 @@ import Footer from "../Components/Footer/Footer";
 import { contactUs } from "../../services/homeServices";
 import { isValidEmailFormat } from "../../services/utilServices";
 import "./Contact.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [recaptchaVerified, setRecaptchaVerified] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -42,11 +45,14 @@ function Contact() {
     }
 
     try {
+      if (!recaptchaVerified) {
+        alert("Please verify the ReCAPTCHA first");
+        return;
+      }
       const response = await contactUs(formData);
       setResponseMessage(
         response?.message || "Your message has been sent successfully!"
       );
-      // Optionally clear the form after successful submission
       setFormData({
         name: "",
         email: "",
@@ -110,7 +116,13 @@ function Contact() {
               onChange={handleChange}
               required
             ></textarea>
-
+            <div className="captcha">
+              <ReCAPTCHA
+                sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                onChange={(value) => setRecaptchaVerified(!!value)}
+                size="compact"
+              />
+            </div>
             <button type="submit">Submit</button>
           </form>
         </div>
