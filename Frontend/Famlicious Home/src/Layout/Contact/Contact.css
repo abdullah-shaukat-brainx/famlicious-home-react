@@ -2,11 +2,12 @@
   font-family: Arial, sans-serif;
   background-color: #ffffff;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .response-message {
@@ -25,6 +26,7 @@
   border-radius: 8px;
   width: 100%;
   max-width: 600px;
+  box-sizing: border-box;
 }
 
 .contact-container h1 {
@@ -62,6 +64,8 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form button {
@@ -76,4 +80,19 @@
 .contact-form button:hover {
   background-color: #ecdfdf;
   color: #000000;
+}
+
+.captcha {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .contact-body {
+    padding: 10px;
+  }
+
+  .contact-container {
+    padding: 15px;
+  }
 }
