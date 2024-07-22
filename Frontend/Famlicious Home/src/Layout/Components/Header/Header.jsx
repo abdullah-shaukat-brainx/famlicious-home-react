@@ -9,10 +9,6 @@ function Header() {
         <img className="header-logo-image" src={logo} alt="Famlicious Logo" />
       </Link>
       <div>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
         <Link to="mailto:help@famlicious.com">
           <i className="fa fa-envelope envelope-icon"></i>help@famlicious.com
         </Link>
